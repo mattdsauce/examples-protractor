@@ -13,9 +13,9 @@ exports.config = {
     browser.ignoreSynchronization = true;
   },
   capabilities: {
-    browserName: 'Chrome',
-    platform: 'Windows 10',
-    version: '58.0',
+    browserName: process.env.SELENIUM_BROWSER, 
+	platform: process.env.SELENIUM_PLATFORM, 
+	version: process.env.SELENIUM_VERSION, 
     screenResolution: '1920x1080'
   }
 };
